@@ -1,7 +1,7 @@
 import useCounterStore from "../stores/useCounterStore";
 
 function Counter1() {
-  const { count, increment, decrement, resetting } = useCounterStore();
+  const { count, increment, decrement, resetCount } = useCounterStore();
 
   return (
     <div className='flex items-center justify-center'>
@@ -22,8 +22,8 @@ function Counter1() {
 
         <button
           className='px-4 py-2 bg-red-500 text-white rounded-md mr-2'
-          onClick={resetting}>
-          Resetting
+          onClick={resetCount}>
+          ResetCount
         </button>
       </div>
     </div>
