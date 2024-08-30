@@ -6,7 +6,13 @@ import './App.css'
 // import Login3 from './components/auth/login3'
 // import CustomHookForm from './components/auth/customHookForm'
 // import FormikForm from './components/auth/formikForm'
-import SWRExample from './components/auth/sWRExample'
+// import SWRExample from './components/auth/sWRExample'
+// import ReactQueryExample from './components/auth/reactQueryExample'
+// import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
+// import ExpensiveComponent from './components/auth/expensiveComponent'
+import VirtualizedList from './components/auth/virtualizedList'
+
+// const queryClient = new QueryClient()
 
 function App() {
 
@@ -19,7 +25,18 @@ function App() {
     {/* <CustomHookForm /> */}
     {/* <FormikForm /> */}
     {/* <ReactHookForm /> */}
-    <SWRExample />
+    {/* <SWRExample /> */}
+    {/* ============================================================================== */}
+    {/* <QueryClientProvider client={queryClient}>
+    <ReactQueryExample />
+    </QueryClientProvider> */}
+    {/* ============================================================================== */}
+    {/* <ExpensiveComponent /> */}
+    <VirtualizedList />
+
+    
+
+
     </>
   )
 }
